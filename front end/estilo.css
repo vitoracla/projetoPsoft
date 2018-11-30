@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body{
+	 background-image: url("imagens/fundo3.png");
+}
+
+div#interface{
+	width: 500px;
+	margin: 200px auto 0px auto;
+	border-top: 1px solid black;
+	box-shadow: 0px 0px 30px rgb(0,0,0,.5);
+}
+
+/*formatação botoes */
+
+nav#botoes{
+	display: block;
+	margin: 10px 40px;
+	padding: 10px 10px 10px 0px;
+
+}
+nav#botoes li:hover{
+	background-color: #0080FF;
+}
+nav#botoes ul{
+	list-style: none;
+	text-transform: uppercase;
+}
+
+nav#botoes li{
+	display: inline-block;
+	background-color: #A9D0F5;
+	padding: 10px;
+	margin: 2px;
+	transition: 1.5s;
+
+}
+
+nav#botoes a{
+	color: #000000;
+	text-decoration: none; 
+}
+
+nav#botoes a:hover{
+	color: #ffffff	
+}
+
+/*botoes pagina admin*/
+
+nav#botoesAdmin{
+	display: block;
+	margin: 10px 40px;
+	padding: 10px 10px 10px 0px;
+
+}
+nav#botoesAdmin li:hover{
+	background-color: #0080FF;
+}
+nav#botoesAdmin ul{
+	list-style: none;
+	text-transform: uppercase;
+}
+
+nav#botoesAdmin li{
+	background-color: #A9D0F5;
+	padding: 10px;
+	margin: 2px;
+	transition: 1.5s;
+
+}
+
+nav#botoesAdmin a{
+	color: #000000;
+	text-decoration: none; 
+}
+
+nav#botoesAdmin a:hover{
+	color: #ffffff	
+}
