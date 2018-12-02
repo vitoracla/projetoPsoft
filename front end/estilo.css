@@ -4,12 +4,19 @@ body{
 	 background-image: url("imagens/fundo3.png");
 }
 
+
+/* retirando as bolinhas de lado dos nomes*/
+li {
+ list-style-type: none;
+ } 
+
 div#interface{
 	width: 500px;
 	margin: 200px auto 0px auto;
 	border-top: 1px solid black;
 	box-shadow: 0px 0px 30px rgb(0,0,0,.5);
 }
+
 
 /*formatação botoes */
 
@@ -76,4 +83,9 @@ nav#botoesAdmin a{
 
 nav#botoesAdmin a:hover{
 	color: #ffffff	
+}
+
+nav#RadioBotton li{
+	display: inline-block;
+	
 }
