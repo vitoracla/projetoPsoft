@@ -6,19 +6,18 @@
 			function vitorMudando(tipo){
 				if(!triste){
 					document.getElementById("vitor").src ="imagens/" + tipo + ".png";
-					if(tipo == 'vitorTriste'){
-						triste = true;
+					
 
 				}
-			}
+			}/*imagens/vitorSorrindo.png ou vitorSerio */
 
-		}
+		
 
 	</script>
 </head>
 <body>
 
-		<h1> acenda a lampada</h1>
+		<h1> Vitor</h1>
 		<img src= "imagens/vitorSerio.png" id="vitor" onmousemove="vitorMudando('vitorSorrindo')" ; onmouseout="vitorMudando('vitorSerio')" ; onclick="vitorMudando('vitorTriste')" />
 </body>
 </html>
