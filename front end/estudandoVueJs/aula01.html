@@ -9,24 +9,16 @@
 <body>
 	<div id="app" v-model> 
 		<h1>{{titulo}}</h1>
-	<div v-if="usuario.nome == 'vitor aquino' ">
-		id: {{ usuario.id }},<br>
-		nome: {{ usuario.nome }},<br>
-		profissao: {{ usuario.profissao }}
-	 </div>
-	 <div v-else> nenhum usuario om ID = 1</div>
+		<input type="text" v-model="nome">{{ nome }}
 	</div>
 	<script src="https://unpkg.com/vue"></script>
+	
 	<script >
 		var app = new Vue({/* instancia vue js*/
 			el:"#app",/* elemento pai*/
 			data: {
 				titulo: "aula 01",
-				usuario:{
-					id: 1,
-					nome: "vitor aquino",
-					profissao: "engenheiro de software"
-				}
+				nome:"",
 			}	
 
 		}); 
