@@ -32,7 +32,7 @@ var produtos = new Vue({
 
 function getProduto(nome){
 	// pegar a url com o back(diego)
-	fetch()
+	fetch() 		
 }
 
 function carregaProduto(todos, nome){
@@ -42,9 +42,8 @@ function carregaProduto(todos, nome){
 }
 
 function cadastraProduto(categoria, nome){
-	produto = {};
-	produto.categoria = categoria;
-	produto.nome = nome;
+	produto = { categoria: categoria,
+	nome : nome};
 
 	// o que é isso ?????
 	var user = gapi.auth2.getAuthInstance().currentUser.Ab.w3;
