@@ -27,13 +27,15 @@ function carregaProdutos() {
         produto = "";
         produtos.forEach(element => {
            produto += "<div>";
-            produto +=`<p>Nome do Produto: </p> ${element.produto}`;
-            produto += `<p>Validade: </p>${element.validade}`;
-            produto += `<p>Fabricante: </p>${element.fabricante}`;
-            produto += `<p>Categora: </p>${element.categoria}`;
+            produto +=`<p>Nome do Produto: </p> ${element.nome}`;
+            produto += `<p>Codigo de barra: </p>${element.barcode}`;
+            produto += `<p>Fabricante: </p>${element.company}`;
+            produto += `<p>Categora: </p>${element.category}`;
         produto += "</div>";
        
         });
         document.getElementById("listagem").innerHTML = produto;
 
 }
+
+//nome, barcode, company, category, status
