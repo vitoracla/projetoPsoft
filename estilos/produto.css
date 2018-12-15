@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#listagem{
+
+}
+
+.produtoCard {
+    width: 800px;
+    height: 200px;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.produtoItens {
+    padding: 10px;
+}
+
+.disponivel{
+    background: greenyellow;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.indisponivel{
+    background:red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.itemTitulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.itemCompany{
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+.itemValor{
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}

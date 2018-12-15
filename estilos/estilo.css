@@ -1,7 +1,6 @@
-@charset "UTF-8";
 
 body{
-	 background-image: url("imagens/fundo3.png");
+	 background-image: url("../imagens/fundo3.png");
 	 font-family: arial, sans-serif;
 }
 
