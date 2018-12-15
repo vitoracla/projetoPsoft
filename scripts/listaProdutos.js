@@ -1,5 +1,6 @@
 import cardProduto from "../Scripts/Componentes/CardProduto.js";
 
+
 carregaProdutos();
 
 function carregaProdutos() {
@@ -147,12 +148,17 @@ function carregaProdutos() {
         const status = element.status;
         const price = element.price
 
-        produto += cardProduto(name,company,status,price);
+        produto += cardProduto(name,company,status,price,true);
+
+        
    
 
     });
     document.getElementById("listagem").innerHTML = produto;
 
 }
+
+
+
 
 //nome, barcode, company, category, status
