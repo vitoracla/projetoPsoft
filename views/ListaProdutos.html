@@ -23,16 +23,20 @@
 
 
 <script>function verProduto(name_,company_,status_,price_){
+
         localStorage.setItem("produtoNome", name_);
+
         localStorage.setItem("produtoCompany", company_);
         localStorage.setItem("produtoStatus", status_);
         localStorage.setItem("produtoPrice", price_);
   
+
         window.location.href = "Produto.html";
     }
     </script>
 
 <script src="../scripts/listaProdutos.js" type = "module"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
 </body>

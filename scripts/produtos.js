@@ -7,6 +7,6 @@ function buscaProduto(){
 	}else{
 	localStorage.setItem("produto",produto.value);
 
-	window.location.href = "ListaProdutos.html";
+	window.location.href = "/views/ListaProdutos.html";
 	}
 }
