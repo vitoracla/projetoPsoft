@@ -7,7 +7,11 @@ function carregarProduto(){
     
 
     const produtoNome = localStorage.getItem("produtoNome");
+    const produtoCompany = localStorage.getItem("produtoCompany");
+    const produtoStatus = localStorage.getItem("produtoStatus");
+    const produtoPrice = localStorage.getItem("produtoPrice");
 
 
-    document.getElementById("produto").innerHTML = cardProduto(produtoNome,produto.company,produto.status,produto.price,false);
+
+    document.getElementById("produto").innerHTML = cardProduto(produtoNome,produtoCompany,produtoStatus,produtoPrice,false);
 }
