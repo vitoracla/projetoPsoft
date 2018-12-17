@@ -1,5 +1,4 @@
 export default function renderCardProduto(name, company, status, price,listagem) {
-
     
     var produto = "";
     produto += '<li class = "produtoCard">';
@@ -12,7 +11,7 @@ export default function renderCardProduto(name, company, status, price,listagem)
         produto += `<p><span class = "itemValor"> R$ ${price} </span> </p>`;
 
     if(listagem)
-        produto += `<p> <button class="btn" type="button" onClick = "verProduto('${name}','${company}','${status}','${price}')">Ver Mais</button> </p>`;
+        produto += `<p> <button class="btn" type="button" onclick = "verProduto('${name}','${company}','${status}','${price}')">Ver Mais</button> </p>`;
 
     produto += "</div>";
     produto += "</li>";

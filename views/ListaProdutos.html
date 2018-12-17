@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Listagem de Produtos</title>
-    <link rel="stylesheet" type="text/css"  href="../estilos/produto.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/produto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -22,7 +22,8 @@
 </div>
 
 
-<script>function verProduto(name_,company_,status_,price_){
+<script>
+    function verProduto(name_,company_,status_,price_){
 
         localStorage.setItem("produtoNome", name_);
 
@@ -33,9 +34,9 @@
 
         window.location.href = "Produto.html";
     }
-    </script>
+</script>
 
-<script src="../scripts/listaProdutos.js" type = "module"></script>
+<script src="../scripts/listaProdutos.js" type="module"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 

@@ -1,66 +1,30 @@
-import cardProduto from "../Scripts/Componentes/CardProduto.js";
-
-carregaProdutos();
+import renderCardProduto from "/Componentes/CardProduto.js";
 
 function carregaProdutos() {
+
     const nomeProduto = localStorage.getItem("produto");
 
-    var produtos = [];
+    let produtos = [];
 
-    produtos.push(
-
-        {
-            name: "Sabonete",
-            status: "available",
-            price: '199,98',
-            barcode: "12345678",
-            company: "Bayer",
-            category: "higiente"
-        }
-
-    );
-    produtos.push(
-
-        {
-            name: "Paracetamol",
-            status: "available",
-            price: '250,67',
-            barcode: "123456789",
-            company: "Bayer",
-            category: "higiente"
-        }
-
-    );
-
-    produtos = produtos.filter(e => e.name.toLowerCase().indexOf(nomeProduto.toLowerCase()) != -1);
-
-
-    /*
     fetch('https://whispering-ocean-74723.herokuapp.com/product/')
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (res) {
-            produtos = res;
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (res) {
+        produtos = res.filter(e => e.name.toLowerCase().indexOf(nomeProduto.toLowerCase()) != -1);
+        
+        let produto = "";
+        produtos.forEach(element => {
+            let name = element.name;
+            let company = element.company;
+            let status = element.status;
+            let price = element.price
+
+            produto += renderCardProduto(name, company, status, price, true);
         });
-
-
-
-*/
-
-    var produto = "";
-    produtos.forEach(element => {
-
-        const name = element.name;
-        const company = element.company;
-        const status = element.status;
-        const price = element.price
-
-        produto += cardProduto(name, company, status, price, true);
-
-
+    
+        document.getElementById("listagem").innerHTML = produto;
     });
-    document.getElementById("listagem").innerHTML = produto;
-
 }
 
+carregaProdutos();

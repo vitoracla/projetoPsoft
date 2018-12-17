@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
 </head>
 <body>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
 <div id="interface">
 <h2 style="text-align: center;">Adicionar Produto</h2>
 		<center><li><label for="NomeProduto">Nome do Produto: </label><br/>
@@ -15,7 +14,7 @@
  		<input type="text" id="Fabricante"/></center></li><br>
  		<center><label for="">Categoria</label>
  			<br>
- 		<select>
+ 		<select id="Categoria">
  			<option value="">Escolher</option>
  			<option value="medicamentos">Medicamentos</option>
  			<option value="higienePessoal">Higiene pessoal</option>
@@ -25,10 +24,11 @@
  		</select></center>
 
 <nav  id="botoes" >
-			<center><li><a href="paginaAdm.html" >Adicionar</a></li>
+			<center><li onclick="registerProduct()">Adicionar</li>
 				<li><a href="paginaAdm.html">Voltar</a></li></center>
 
 			</nav>
 		</nav>
+<script src="../scripts/cadstraProdutos.js"></script>
 </body>
 </html>

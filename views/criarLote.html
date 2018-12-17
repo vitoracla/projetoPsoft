@@ -4,23 +4,24 @@
 	
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
 <div id="interface">
 <h2 style="text-align: center;">Criar Lote</h2>
 
 <nav  id="botoesAdmin" >
-		<center><li><label for="NomeLote">Nome do Lote: </label><br/>
- 		<input type="text" id="NomeLote"/></center></li>
+		<center><li><label for="CodigoDeBarra">Código de Barras do Produto: </label><br/>
+ 		<input type="text" id="CodigoDeBarra"/></center></li>
 		<center><li><label for="qntItens">Quantidade de Itens: </label><br/>
 		<input type="text" id="qntItens"></center></li>
 		<center><li><label for="dataValidade">Data de Validade: </label><br/>
 		<input type="text" id="dataValidade"></center></li>
 		<nav  id="botoes" >
 				<center></center>
-				<center><li><a href="paginaAdm.html" >Criar</a></li>
+				<center><li onclick="registerLot()">Criar</li>
 				<li><a href="paginaAdm.html">Voltar</a></li></center>
 
 			</nav>
 
+<script src="../scripts/cadastraLote.js"></script>
 </body>
 </html>
