@@ -1,2 +1,4 @@
 # projetoPsoft
-front-end do projeto de psoft
+## Front-end: Projeto da cadeira Psoft
+
+<p><i>Author: @vitoracla</i></p>
